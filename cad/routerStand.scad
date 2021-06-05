@@ -75,7 +75,7 @@ module mount(routerDiameter, width, bottomThickness) {
     
     module mountingHole(hight) {
         screwHoleDiameter = 6;
-        screwHoleCountersinkDiameter = 12;
+        screwHoleCountersinkDiameter = 10;
     
         translate([0,hight+1,0])
         rotate([90,0,0])
@@ -131,7 +131,8 @@ module mount(routerDiameter, width, bottomThickness) {
 
 
 module routerStand() {
-    routerDiameter  = 120;
+    margin          = 4;
+    routerDiameter  = 110+margin;
     width           = (routerDiameter/3)*2;
     bottomThickness = 10;
     
