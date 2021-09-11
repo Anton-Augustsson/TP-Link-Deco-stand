@@ -1,9 +1,9 @@
 $fn=90;  // accuracy
 
 module bottom(routerDiameter, mountWidth, bottomThickness) {
-    extraDiameter   = 20;
+    extraDiameter   = 15;
     bottomDiameter  = routerDiameter+extraDiameter;
-    bottomTotalThickness = bottomThickness+10;
+    bottomTotalThickness = bottomThickness+8;
     
     bottomCurvCutOutDiameter = mountWidth;
     bottomCurvCutOutHight    = bottomTotalThickness+2;
@@ -131,7 +131,7 @@ module mount(routerDiameter, width, bottomThickness) {
 
 
 module routerStand() {
-    margin          = 4;
+    margin          = 1;
     routerDiameter  = 110+margin;
     width           = (routerDiameter/3)*2;
     bottomThickness = 10;
